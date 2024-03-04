@@ -1,0 +1,18 @@
+@startuml classes_2
+
+class Professeur
+
+class Discipline
+
+class Cours
+
+class Etudiant
+
+<> pdc
+
+Professeur "1" -right- "*" pdc
+Discipline "1" -down- "1" pdc
+pdc "1" -right- "1" Cours
+Etudiant "5..30" -- "*" Cours
+
+@enduml
